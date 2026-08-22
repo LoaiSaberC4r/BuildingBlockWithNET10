@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <UserSecretsId>AcademyOps.Api</UserSecretsId>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../../BuildingBlock/BuildingBlock.Api/BuildingBlock.Api.csproj" />
+    <ProjectReference Include="../AcademyOps.Application/AcademyOps.Application.csproj" />
+    <ProjectReference Include="../AcademyOps.Infrastructure/AcademyOps.Infrastructure.csproj" />
+    <ProjectReference Include="../AcademyOps.Infrastructure.EntityFrameworkCore.SqlServer/AcademyOps.Infrastructure.EntityFrameworkCore.SqlServer.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Asp.Versioning.Mvc.ApiExplorer" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore" />
+    <PackageReference Include="Swashbuckle.AspNetCore" />
+  </ItemGroup>
+</Project>
